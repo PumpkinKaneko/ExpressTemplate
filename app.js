@@ -17,7 +17,7 @@ app.listen(PORT, function () {
 });
 
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { message: "Hello HTML5!" });
 });
 
 app.post("/", function (req, res) {
